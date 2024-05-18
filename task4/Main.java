@@ -12,7 +12,7 @@ public class Main {
   public Main(String username, String password) {
     this.username = username;
     this.password = password;
-    System.out.println("Sucessfully You are registered!  :)");
+    System.out.println("You are Sucessfully  registered!  :)");
     this.isLoggedIn = false;
     this.timeRemaining = 10; // in minutes
     this.questionCount = 10;
@@ -33,7 +33,7 @@ public class Main {
     String inputPassword = scanner.nextLine();
     if (inputUsername.equals(username) && inputPassword.equals(password)) {
       isLoggedIn = true;
-      System.out.println("Login successful Best of Luck Dear");
+      System.out.println("Login successful. Best of Luck Dear");
     } else {
       System.out.println("Login failed. Please try again.");
     }
@@ -95,7 +95,7 @@ public class Main {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter your username and password");
+    System.out.println("Enter your username & password");
     String uName = sc.nextLine();
     String pWord = sc.nextLine();
     Main examSystem = new Main(uName, pWord);
